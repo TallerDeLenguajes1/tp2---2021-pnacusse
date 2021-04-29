@@ -12,11 +12,12 @@ int main()
     {
         for(c = 0; c<M; c++)
         {
-            printf("%d\t" , mt[f][c]);
+            printf("%d\t" , *(mt+ (f * M+c)));
         }
         printf("\n");
     }
 
     return 0;
 }
+
 
